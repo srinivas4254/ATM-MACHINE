@@ -4,11 +4,14 @@ import java.util.Set;
 class atmOperation implements atmInterface
 {
 	atm atm = new atm();
+	   {
+	   atm.setBalance(10000);
+           }
 	HashMap<Double,String> mini=new HashMap<>();
 
      	@Override	
 	public void viewbalance(){
-        atm.setBalance(10000);
+        
 		System.out.println("available balance :" + atm.getBalance());
 	}
     	@Override
